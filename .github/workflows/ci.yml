@@ -1,0 +1,60 @@
+# Builds the site on every push and pull request, so a change that breaks the
+# build is caught here rather than on the live site.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Least privilege: this workflow only ever needs to read the code.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      # The build only warns about missing images or a placeholder email.
+      # In CI we want those to actually fail, so problems can't reach the site.
+      - name: Fail if the build printed any warning
+        run: |
+          pnpm run build 2>build-warnings.txt >/dev/null
+          if grep -q '⚠️' build-warnings.txt; then
+            echo "Build produced warnings:"
+            cat build-warnings.txt
+            exit 1
+          fi
+          echo "No build warnings."
+
+      - name: Check the page actually rendered
+        run: |
+          test -s dist/index.html || { echo "dist/index.html is missing or empty"; exit 1; }
+          if grep -q '{{' dist/index.html; then
+            echo "Unfilled template slots left in the page:"
+            grep -o '{{[a-zA-Z]*}}' dist/index.html | sort -u
+            exit 1
+          fi
+          echo "Page looks good."

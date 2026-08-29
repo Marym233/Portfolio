@@ -1,0 +1,11 @@
+# Normalise line endings so editing on Windows doesn't show up as a diff on
+# every line of every file.
+* text=auto eol=lf
+
+# Binary — never touch these.
+*.pdf binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.ico binary

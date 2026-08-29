@@ -1,0 +1,21 @@
+# Keeps dependencies and CI actions patched without you having to watch for it.
+# Dependabot opens a PR; CI builds it; you merge if green.
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      # One PR for routine bumps instead of a stream of them.
+      all-dependencies:
+        patterns: ['*']
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5

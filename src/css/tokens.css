@@ -1,0 +1,27 @@
+/* ============================================================
+   THEME — colours, fonts and sizes.
+   Change a value here and it updates everywhere on the site.
+   ============================================================ */
+:root {
+  /* Colours */
+  --paper:     #f4f1de;  /* page background (warm stone)      */
+  --paper-2:   #f2cc8f;  /* card background (sand)            */
+  --ink:       #15140f;  /* main text                         */
+  --ink-soft:  #3d405b;  /* muted / secondary text            */
+  --accent:    #f7b1b0;  /* highlight (blush)                 */
+  --on-accent: #3d405b;  /* text sitting on top of accent     */
+  --line:      #cad182;  /* faint divider lines               */
+
+  /* Image placeholder tint — used behind photos while they load */
+  --thumb-1: #3d405b;
+  --thumb-2: #15140f;
+
+  /* Layout */
+  --maxw: 1180px;
+  --gutter: 28px;
+
+  /* Fonts */
+  --display: "Bricolage Grotesque", system-ui, sans-serif;
+  --body:    "Hanken Grotesk", system-ui, sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, monospace;
+}

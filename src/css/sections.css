@@ -1,0 +1,212 @@
+/* ============================================================
+   SECTIONS — layout for each part of the page, top to bottom.
+   ============================================================ */
+
+/* ----- Header / navigation ----- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--paper) 86%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.nav__mark {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.03em;
+}
+.nav__mark span { color: var(--accent); }
+.nav__links { display: flex; align-items: center; gap: 28px; }
+.nav__links a:not(.btn) {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  transition: color .2s ease;
+}
+.nav__links a:not(.btn):hover { color: var(--ink); }
+.nav .btn { padding: 9px 16px; }
+
+/* Menu button — hidden on desktop, shown on small screens */
+.nav__toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+/* ----- Hero ----- */
+.hero { padding: 86px 0 64px; border-top: none; }
+.hero .eyebrow { margin-bottom: 30px; }
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(3.6rem, 13.5vw, 12rem);
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+}
+.hero h1 .ln { display: block; overflow: hidden; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero__foot {
+  margin-top: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.hero__role { font-size: 18px; color: var(--ink-soft); max-width: 42ch; }
+.hero__cta { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ----- About ----- */
+.about__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: start; }
+.portrait {
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, var(--thumb-1), var(--thumb-2));
+}
+.portrait img { width: 100%; height: 100%; object-fit: cover; }
+.about__body p { font-size: 18px; margin-bottom: 18px; max-width: 52ch; }
+.about__body p.lead {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+
+/* ----- Experience timeline ----- */
+.timeline { border-left: 2px solid var(--line); margin-left: 6px; }
+.job { position: relative; padding: 0 0 44px 34px; }
+.job:last-child { padding-bottom: 0; }
+.job::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.job__when {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.job h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+  margin: 8px 0 2px;
+}
+.job__org { font-weight: 600; color: var(--ink-soft); margin-bottom: 4px; }
+.job__meta { font-size: 14px; color: var(--ink-soft); margin-bottom: 10px; }
+.job p { font-size: 16px; max-width: 60ch; }
+
+/* ----- Projects ----- */
+.work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+/* ----- Skills ----- */
+.skill-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.skill-cols h3 {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+
+/* ----- Education ----- */
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.edu-row:last-child { border-bottom: 1px solid var(--line); }
+.edu-row h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+}
+.edu-row .sub { color: var(--ink-soft); font-size: 15px; margin-top: 2px; }
+.edu-row .when {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* ----- Contact ----- */
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.contact__big {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.contact__big a { border-bottom: 3px solid var(--accent); transition: color .2s ease; }
+.contact__big a:hover { color: var(--accent); }
+
+/* ============================================================
+   SMALL SCREENS
+   ============================================================ */
+@media (max-width: 860px) {
+  .about__grid, .contact, .skill-cols { grid-template-columns: 1fr; gap: 36px; }
+  .work-grid { grid-template-columns: 1fr; }
+
+  .nav__toggle { display: inline-block; }
+  .nav__links {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 8px var(--gutter) 20px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    display: none;
+  }
+  .nav__links.is-open { display: flex; }
+  .nav__links a:not(.btn) { padding: 14px 0; width: 100%; border-bottom: 1px solid var(--line); }
+  .nav__links .btn { margin-top: 16px; }
+}
+
+@media (max-width: 540px) {
+  :root { --gutter: 20px; }
+  .hero { padding: 60px 0 48px; }
+  section { padding: 68px 0; }
+  .facts { grid-template-columns: 1fr; }
+  .hero__foot { flex-direction: column; align-items: flex-start; }
+  .card__body { flex-direction: column; gap: 8px; }
+  .card__meta { text-align: left; }
+  .card__arrow { margin: 8px auto 0 0; }
+}

@@ -1,0 +1,165 @@
+{
+  "site": {
+    "name": "Maryam Shah",
+    "logo": "Maryam",
+    "pageTitle": "Maryam Shah — Computing with Cloud Computing",
+    "description": "Maryam Shah — Computer science student at TU Dublin focused on backend architecture, networks and cloud.",
+    "url": "https://maryamshah.dev",
+    "email": "marym.23.shah@gmail.com",
+    "location": "Dublin, Ireland",
+    "cvFile": "Maryam-Shah-CV-2026.pdf"
+  },
+
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+
+  "hero": {
+    "eyebrow": "Computing with Cloud Computing — TU Dublin",
+    "lines": ["Maryam", "Shah"],
+    "dot": true,
+    "intro": "Computer science student drawn to the invisible side of technology — backend architecture, network systems and secure, scalable cloud."
+  },
+
+  "about": {
+    "eyebrow": "About",
+    "heading": "A short introduction",
+    "photo": "Maryam_Shah.jpg",
+    "photoAlt": "Maryam Shah",
+    "lead": "I'm a Computing with Cloud Computing student at TU Dublin (Class of 2028) with a deep fascination for the \"invisible\" side of technology.",
+    "paragraphs": [
+      "My foundation is built on HTML, CSS, JavaScript and Python, but my real interest lies in the complexity of backend architecture and how robust network systems support the modern web.",
+      "Right now I'm exploring the intersection of Generative AI and Cybersecurity — keen to understand how emerging AI models can be built into secure, scalable cloud environments. I'm a lifelong learner looking to bridge the gap between basic data filtering and enterprise-level software infrastructure."
+    ],
+    "facts": [
+      { "label": "Based in", "value": "Dublin, Ireland" },
+      { "label": "Focus", "value": "Cloud &amp; backend" },
+      { "label": "Studying", "value": "BSc Computer Science" },
+      { "label": "Status", "value": "Open to internships" }
+    ]
+  },
+
+  "experience": {
+    "eyebrow": "Experience",
+    "heading": "Where I've worked",
+    "jobs": [
+      {
+        "when": "July 2026 — Present",
+        "role": "Sales Associate",
+        "org": "American Vintage",
+        "meta": "Part-time · Exchequer St, Dublin · On-site",
+        "summary": "Handle cash and stock control to keep the store running smoothly, and introduce customers to new arrivals and styles."
+      },
+      {
+        "when": "Apr 2026 — July 2026",
+        "role": "Sales Consultant",
+        "org": "eir Ireland",
+        "meta": "Part-time · Portlaoise, Co. Laois · On-site",
+        "summary": "Customer-facing sales role advising on eir's products and services."
+      },
+      {
+        "when": "Jan 2025 — Sep 2025",
+        "role": "Sales Associate",
+        "org": "American Vintage",
+        "meta": "Full-time · Kildare, Co. Kildare · On-site",
+        "summary": "Managed cash handling and stock control to ensure efficient store operations."
+      },
+      {
+        "when": "Oct 2024 — Dec 2024",
+        "role": "Sales Associate",
+        "org": "TK Maxx",
+        "meta": "Part-time · Portlaoise, Co. Laois · On-site",
+        "summary": "Managed fitting rooms and kept the sales floor tidy to enhance the customer experience."
+      },
+      {
+        "when": "Feb 2022 — Jun 2022",
+        "role": "Crew Member",
+        "org": "McDonald's",
+        "meta": "Full-time · Portlaoise, Co. Laois · On-site",
+        "summary": "Delivered exceptional customer service at the drive-through, ensuring accurate, fast orders."
+      }
+    ]
+  },
+
+  "projects": {
+    "eyebrow": "Projects",
+    "heading": "Things I've built",
+    "items": [
+      {
+        "name": "Student Location",
+        "summary": "A full-stack web app that manages and displays student location data in a responsive interface. Built with Svelte and JavaScript on the front end, with Supabase handling storage and retrieval.",
+        "type": "Web app",
+        "year": "2024",
+        "url": "https://github.com/Maryam-gif/Project-student-Location",
+        "image": "Project_1.jpg",
+        "imageAlt": "Student Location web app"
+      },
+      {
+        "name": "TrackPad",
+        "summary": "A personal tracker in Next.js and TypeScript that pulls a working student's timetable, shifts and exam deadlines into one place with automatic clash detection, plus a payslip scanner that reads uploaded PDFs to keep income, tax band and annual leave up to date.",
+        "type": "Web app",
+        "year": "2026",
+        "url": "",
+        "image": "",
+        "placeholder": "Started in September"
+      }
+    ]
+  },
+
+  "skills": {
+    "eyebrow": "Skills",
+    "heading": "Tools &amp; interests",
+    "columns": [
+      {
+        "heading": "Languages &amp; foundations",
+        "tags": [
+          { "label": "Python", "strong": true },
+          { "label": "JavaScript", "strong": true },
+          { "label": "HTML" },
+          { "label": "CSS" }
+        ]
+      },
+      {
+        "heading": "Exploring",
+        "tags": [
+          { "label": "Backend architecture" },
+          { "label": "Network systems" },
+          { "label": "Cloud computing" },
+          { "label": "Generative AI" },
+          { "label": "Cybersecurity" }
+        ]
+      }
+    ]
+  },
+
+  "education": {
+    "eyebrow": "Education &amp; certifications",
+    "heading": "Background",
+    "items": [
+      {
+        "title": "Technological University Dublin",
+        "sub": "BSc, Computer Science (Computing with Cloud Computing)",
+        "when": "Sep 2024 — May 2028"
+      },
+      {
+        "title": "Introduction to IoT",
+        "sub": "Cisco",
+        "when": "Issued Oct 2025"
+      }
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Get in touch",
+    "big": "Open to internships &amp; opportunities.",
+    "linkText": "Say hello",
+    "socials": [
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/shah-mary", "icon": "linkedin" },
+      { "label": "GitHub", "url": "https://github.com/Maryam-gif", "icon": "github" }
+    ]
+  }
+}
