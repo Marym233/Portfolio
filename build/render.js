@@ -8,10 +8,16 @@ import { sections } from './sections/index.js';
 
 /** Everything that can fill a {{slot}}: the head values plus every section. */
 const buildSlots = (content) => {
+  // Social previews need absolute URLs — a relative path shows no image.
+  const origin = content.site.url.replace(/\/+$/, '');
+
   const slots = {
     pageTitle: esc(content.site.pageTitle),
     description: esc(content.site.description),
-    url: attr(content.site.url),
+    url: attr(origin),
+    siteName: esc(content.site.name),
+    themeColor: attr(content.site.themeColor),
+    ogImage: attr(`${origin}/${content.site.ogImage}`),
   };
 
   for (const [name, render] of Object.entries(sections)) {

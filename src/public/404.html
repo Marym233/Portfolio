@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page not found — Maryam Shah</title>
+<meta name="robots" content="noindex" />
+
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon.ico" sizes="48x48" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+<!-- Same stylesheets as the rest of the site, so this page can't drift. -->
+<link rel="stylesheet" href="/css/tokens.css" />
+<link rel="stylesheet" href="/css/base.css" />
+<link rel="stylesheet" href="/css/components.css" />
+
+<style>
+  .nf { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 40px; }
+  .nf .code {
+    font-family: var(--display); font-weight: 800;
+    font-size: clamp(5rem, 22vw, 12rem); line-height: 1; letter-spacing: -0.05em;
+  }
+  .nf .code b { color: var(--rose); }
+  .nf p { color: var(--ink-soft); margin: 14px 0 28px; }
+</style>
+</head>
+<body>
+  <div class="nf">
+    <div>
+      <div class="code">404<b>.</b></div>
+      <p>That page doesn't exist.</p>
+      <a class="btn" href="/">Back to home</a>
+    </div>
+  </div>
+</body>
+</html>

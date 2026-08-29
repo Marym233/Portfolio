@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Maryam Shah social avatar. Live text in Bricolage Grotesque; outline for print. -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;display=swap');
+    text { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 800; }
+  </style>
+  <circle cx="200" cy="200" r="200" fill="#C2185B"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
+        font-size="180" letter-spacing="-10" fill="#FFFFFF">MS</text>
+</svg>

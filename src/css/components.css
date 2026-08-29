@@ -127,5 +127,5 @@
   transition: padding .2s ease, color .2s ease;
 }
 .social:last-child { border-bottom: 1px solid var(--line); }
-.social:hover { padding-left: 14px; color: var(--accent); }
+.social:hover { padding-left: 14px; color: var(--rose); }
 .social svg { width: 16px; height: 16px; }

@@ -18,7 +18,7 @@
   font-size: 22px;
   letter-spacing: -0.03em;
 }
-.nav__mark span { color: var(--accent); }
+.nav__mark span { color: var(--rose); }
 .nav__links { display: flex; align-items: center; gap: 28px; }
 .nav__links a:not(.btn) {
   font-family: var(--mono);
@@ -58,7 +58,7 @@
   text-transform: uppercase;
 }
 .hero h1 .ln { display: block; overflow: hidden; }
-.hero h1 em { font-style: normal; color: var(--accent); }
+.hero h1 em { font-style: normal; color: var(--rose); }
 .hero__foot {
   margin-top: 42px;
   display: flex;
@@ -102,7 +102,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--rose);
 }
 .job__when {
   font-family: var(--mono);
@@ -171,8 +171,8 @@
   line-height: 1;
   letter-spacing: -0.03em;
 }
-.contact__big a { border-bottom: 3px solid var(--accent); transition: color .2s ease; }
-.contact__big a:hover { color: var(--accent); }
+.contact__big a { border-bottom: 3px solid var(--rose); transition: color .2s ease; }
+.contact__big a:hover { color: var(--rose); }
 
 /* ============================================================
    SMALL SCREENS

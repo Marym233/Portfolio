@@ -21,6 +21,7 @@ import { readFile } from 'node:fs/promises';
 import { CONTENT_FILE } from './build/paths.js';
 import { renderPage } from './build/render.js';
 import { resetDist, writePage, copyAssets } from './build/assets.js';
+import { writeSeoFiles } from './build/seo.js';
 import { runChecks } from './build/checks.js';
 
 const content = JSON.parse(await readFile(CONTENT_FILE, 'utf8'));
@@ -30,6 +31,7 @@ const { html, leftover } = await renderPage(content);
 await resetDist();
 await writePage(html);
 await copyAssets();
+await writeSeoFiles(content);
 
 // Checks run after the copy so they can look at what actually landed in dist/.
 for (const warning of runChecks(content, leftover)) {

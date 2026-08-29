@@ -12,6 +12,20 @@
   --on-accent: #3d405b;  /* text sitting on top of accent     */
   --line:      #cad182;  /* faint divider lines               */
 
+  /* --- Signal Rose ------------------------------------------
+     The brand mark colour. Blush is a pale tint: lovely as a
+     large surface under dark text, but it disappears when it
+     has to be a 1px rule, a 12px dot or a 16px favicon, and it
+     cannot carry white text (1.77:1).
+
+     So the system splits by job:
+       --accent (blush)  large surfaces, dark text on top
+       --rose            small marks, links, anything on white
+     -------------------------------------------------------- */
+  --rose:      #C2185B;  /* marks, links, the dot   5.9:1 on white */
+  --rose-deep: #A61B57;  /* hover / pressed         7.2:1 on white */
+  --rose-wash: #fde7ef;  /* soft highlight panels                  */
+
   /* Image placeholder tint — used behind photos while they load */
   --thumb-1: #3d405b;
   --thumb-2: #15140f;

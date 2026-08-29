@@ -42,7 +42,7 @@ img { max-width: 100%; display: block; }
   content: "";
   width: 26px;
   height: 1px;
-  background: var(--accent);
+  background: var(--rose);
   display: inline-block;
 }
 
@@ -72,7 +72,7 @@ footer { padding: 38px 0; border-top: 1px solid var(--line); }
 }
 
 /* Keyboard focus ring */
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--rose); outline-offset: 3px; }
 
 /* Fade-and-rise on scroll */
 .reveal {

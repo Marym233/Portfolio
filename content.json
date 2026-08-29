@@ -7,7 +7,9 @@
     "url": "https://maryamshah.dev",
     "email": "marym.23.shah@gmail.com",
     "location": "Dublin, Ireland",
-    "cvFile": "Maryam-Shah-CV-2026.pdf"
+    "cvFile": "Maryam-Shah-CV-2026.pdf",
+    "themeColor": "#C2185B",
+    "ogImage": "assets/img/og-image.png"
   },
 
   "nav": [
@@ -159,7 +161,7 @@
     "linkText": "Say hello",
     "socials": [
       { "label": "LinkedIn", "url": "https://www.linkedin.com/in/shah-mary", "icon": "linkedin" },
-      { "label": "GitHub", "url": "https://github.com/Maryam-gif", "icon": "github" }
+      { "label": "GitHub", "url": "https://github.com/marym233", "icon": "github" }
     ]
   }
 }

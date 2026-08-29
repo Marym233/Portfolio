@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Maryam Shah favicon. Live text set in Bricolage Grotesque (loaded from Google Fonts);
+       for print/true vector, outline the text in Figma or Illustrator. -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&amp;display=swap');
+    text { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 800; }
+  </style>
+  <rect width="64" height="64" rx="14" fill="#C2185B"/>
+  <text x="50%" y="50%" dy="0.07em" text-anchor="middle" dominant-baseline="central"
+        font-size="38" letter-spacing="-2" fill="#FFFFFF">M.</text>
+</svg>
