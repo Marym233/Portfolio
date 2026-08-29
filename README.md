@@ -37,9 +37,9 @@ dist/             ← generated. Never edit; it gets wiped on every build.
 ## First run
 
 ```bash
-npm install
-npm run build     # writes dist/
-npm start         # build + local preview at http://localhost:8787
+pnpm install
+pnpm run build     # writes dist/
+pnpm start         # build + local preview at http://localhost:8787
 ```
 
 You need Node 18 or newer.
@@ -47,7 +47,7 @@ You need Node 18 or newer.
 ## Making changes
 
 **New job, new project, new skill, changed email?** Open `content.json`, copy an
-existing block, edit it, run `npm run build`. Nothing else to touch.
+existing block, edit it, run `pnpm run build`. Nothing else to touch.
 
 **Different colours?** `src/css/tokens.css` — change `--accent` and the rest
 follows.
@@ -81,7 +81,7 @@ buttons can never drift apart again.
 
 ```bash
 npx wrangler login
-npm run deploy
+pnpm run deploy
 ```
 
 There's no server code — Workers just serves the files in `dist/` from the

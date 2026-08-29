@@ -9,7 +9,7 @@ import { SRC, DIST, PUBLIC_DIR, ASSET_DIRS } from './paths.js';
 /**
  * Start from an empty dist/ so deleted files don't linger between builds.
  *
- * We empty the folder rather than deleting it: while `npm start` is running,
+ * We empty the folder rather than deleting it: while `pnpm start` is running,
  * wrangler holds an open handle to dist/, and on Windows that makes removing
  * the folder itself fail with EBUSY. Clearing the contents leaves that handle
  * valid, so a rebuild refreshes the running preview instead of crashing.

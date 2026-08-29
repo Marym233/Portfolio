@@ -3,6 +3,12 @@ dist/
 .wrangler/
 .DS_Store
 
+# This project uses pnpm only. These lockfiles should never appear; if one
+# does, someone ran the wrong package manager and the versions will drift.
+package-lock.json
+yarn.lock
+bun.lockb
+
 # Secrets — never commit these. .dev.vars is where wrangler keeps local
 # secrets, and it is the easiest file in this project to leak by accident.
 .env

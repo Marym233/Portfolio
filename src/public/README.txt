@@ -1,5 +1,5 @@
 Put your images and CV in this folder. Everything here is copied
-straight to the root of the site when you run: npm run build
+straight to the root of the site when you run: pnpm run build
 
 Expected right now:
   Maryam_Shah.jpg             (About photo, portrait shape)

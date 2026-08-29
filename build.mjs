@@ -3,7 +3,7 @@
    Reads content.json, fills in src/index.html, and copies the
    css / js / public folders into dist/.
 
-   Run it with:  npm run build
+   Run it with:  pnpm run build
 
    The steps live in build/:
      paths.js       where the folders are

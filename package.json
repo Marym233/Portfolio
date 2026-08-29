@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@11.5.2",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=10"
+  },
   "scripts": {
+    "preinstall": "npx --yes only-allow pnpm",
     "build": "node build.mjs",
-    "start": "npm run build && wrangler dev",
-    "deploy": "npm run build && wrangler deploy"
+    "start": "pnpm run build && wrangler dev",
+    "deploy": "pnpm run build && wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
