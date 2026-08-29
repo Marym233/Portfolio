@@ -79,6 +79,30 @@ buttons can never drift apart again.
 
 ## Deploying to Cloudflare
 
+Deployment is automatic. The repository is connected to Cloudflare Workers
+Builds, so:
+
+- a push to `main` builds and deploys to production
+- a push to any other branch creates a preview deployment
+
+The Cloudflare build settings are:
+
+| Setting | Value |
+| --- | --- |
+| Build command | `pnpm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Node version | read from `.node-version` |
+
+Nothing needs an API token, because Cloudflare pulls from GitHub itself.
+
+**A broken build cannot deploy.** Cloudflare sets `CI=true`, and in CI the
+build turns its warnings into an error — so a missing photo, an unfilled
+template slot or a placeholder email fails the build instead of quietly going
+live. On your own machine the same warnings are only printed, so a
+half-finished page still previews.
+
+To deploy by hand instead:
+
 ```bash
 npx wrangler login
 pnpm run deploy
@@ -95,9 +119,11 @@ so the link previews point at the right place.
 
 - The two Download CV buttons pointed at two different filenames
   (`Maryam_2026.pdf` and `Maryam_Shah_CV_2026.pdf`). Now one setting.
-- The contact email was still `your@email.com` in both places — **still needs
-  your real address** in `content.json`. The build prints a warning until it's
-  changed.
+- The contact email was still `your@email.com` in both places. It's now set in
+  `content.json`, and the build fails in CI if it ever goes back to a
+  placeholder.
+- The CV link pointed at filenames that were not in the repository, so the
+  Download CV button downloaded nothing.
 - The Student Location description ended mid-sentence on "Technologies used:".
 - Photo and card backgrounds were still indigo from an earlier colour scheme,
   which clashed with the blush accent. They now use theme colours.

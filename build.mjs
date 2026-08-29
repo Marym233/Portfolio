@@ -34,8 +34,18 @@ await copyAssets();
 await writeSeoFiles(content);
 
 // Checks run after the copy so they can look at what actually landed in dist/.
-for (const warning of runChecks(content, leftover)) {
+const warnings = runChecks(content, leftover);
+for (const warning of warnings) {
   console.warn(`⚠️  ${warning}`);
+}
+
+/* On your own machine a warning is a nudge — a half-finished portfolio should
+   still preview. In CI, and in a Cloudflare build, the same warning has to stop
+   the build, otherwise a missing photo or a placeholder email reaches the live
+   site. Both set CI=true, so one rule covers both. */
+if (warnings.length && process.env.CI) {
+  console.error(`\n✖ ${warnings.length} warning(s) above — refusing to build in CI.`);
+  process.exit(1);
 }
 
 console.log('✅ Built dist/');

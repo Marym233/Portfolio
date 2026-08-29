@@ -35,27 +35,11 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      # CI=true is set by Actions, so build.mjs turns its warnings (missing
+      # image, placeholder email, unfilled slot) into a failure by itself.
+      # Cloudflare sets CI=true too, so the deploy is gated by the same rule.
       - name: Build
         run: pnpm run build
 
-      # The build only warns about missing images or a placeholder email.
-      # In CI we want those to actually fail, so problems can't reach the site.
-      - name: Fail if the build printed any warning
-        run: |
-          pnpm run build 2>build-warnings.txt >/dev/null
-          if grep -q '⚠️' build-warnings.txt; then
-            echo "Build produced warnings:"
-            cat build-warnings.txt
-            exit 1
-          fi
-          echo "No build warnings."
-
-      - name: Check the page actually rendered
-        run: |
-          test -s dist/index.html || { echo "dist/index.html is missing or empty"; exit 1; }
-          if grep -q '{{' dist/index.html; then
-            echo "Unfilled template slots left in the page:"
-            grep -o '{{[a-zA-Z]*}}' dist/index.html | sort -u
-            exit 1
-          fi
-          echo "Page looks good."
+      - name: Check the page rendered
+        run: test -s dist/index.html || { echo "dist/index.html missing or empty"; exit 1; }
