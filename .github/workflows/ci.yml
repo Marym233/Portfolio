@@ -27,9 +27,10 @@ jobs:
 
       - uses: pnpm/action-setup@v4
 
+      # Must stay >= 22.13: the pnpm version pinned in package.json needs it.
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .node-version
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
