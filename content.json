@@ -104,7 +104,7 @@
         "summary": "A Python-based data pipeline that fetches live weather data from the OpenWeatherMap API and uploads it as a structured JSON file to an AWS S3 bucket. Each run generates a timestamped file, demonstrating a simple but complete flow from external API to cloud storage. ",
         "type": "Web app",
         "year": "2026",
-        "url": "",
+        "url": "https://github.com/Marym233/weather-to-s3",
         "image": "screenshot_weather.png",
         "placeholder": "Started in September"
       }
