@@ -100,12 +100,12 @@
         "imageAlt": "Student Location web app"
       },
       {
-        "name": "TrackPad",
-        "summary": "A personal tracker in Next.js and TypeScript that pulls a working student's timetable, shifts and exam deadlines into one place with automatic clash detection, plus a payslip scanner that reads uploaded PDFs to keep income, tax band and annual leave up to date.",
+        "name": "Weather to S3",
+        "summary": "A Python-based data pipeline that fetches live weather data from the OpenWeatherMap API and uploads it as a structured JSON file to an AWS S3 bucket. Each run generates a timestamped file, demonstrating a simple but complete flow from external API to cloud storage. ",
         "type": "Web app",
         "year": "2026",
         "url": "",
-        "image": "",
+        "image": "screenshot_weather.png",
         "placeholder": "Started in September"
       }
     ]
