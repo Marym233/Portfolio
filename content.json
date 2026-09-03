@@ -107,6 +107,15 @@
         "url": "https://github.com/Marym233/weather-to-s3",
         "image": "screenshot_weather.png",
         "placeholder": "Started in September"
+      },
+      {
+        "name": "Student Work Budget",
+        "summary": "Track your shifts, your classes, and your money — all in one place, built for how you actually work and study. ",
+        "type": "Web app",
+        "year": "2026",
+        "url": "https://github.com/Marym233/Student-Work-Budget",
+        "image": "",
+        "placeholder": "Its a project through which im learning about AWS Products"
       }
     ]
   },
