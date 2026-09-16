@@ -107,15 +107,6 @@
         "url": "https://github.com/Marym233/weather-to-s3",
         "image": "screenshot_weather.png",
         "placeholder": "Started in September"
-      },
-      {
-        "name": "Student Work Budget",
-        "summary": "Track your shifts, your classes, and your money — all in one place, built for how you actually work and study. ",
-        "type": "Web app",
-        "year": "2026",
-        "url": "https://github.com/Marym233/Student-Work-Budget",
-        "image": "",
-        "placeholder": "Its a project through which im learning about AWS Products"
       }
     ]
   },
@@ -154,6 +145,11 @@
         "title": "Technological University Dublin",
         "sub": "BSc, Computer Science (Computing with Cloud Computing)",
         "when": "Sep 2024 — May 2028"
+      },
+      {
+        "title": "Technological University Dublin",
+        "sub": "Certificate in CISCO CCNA, (CISCO Networks and System Administration with Work Experience)",
+        "when": "Sep 2026 — May 2027"
       },
       {
         "title": "Introduction to IoT",
