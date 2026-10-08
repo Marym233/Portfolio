@@ -5,9 +5,9 @@
     "pageTitle": "Maryam Shah — Computing with Cloud Computing",
     "description": "Maryam Shah — Computer science student at TU Dublin focused on backend architecture, networks and cloud.",
     "url": "https://maryamshah.dev",
-    "email": "marym.23.shah@gmail.com",
+    "email": "marym.shah@outlook.com",
     "location": "Dublin, Ireland",
-    "cvFile": "Maryam-Shah-CV-2026.pdf",
+    "cvFile": "Maryam-Shah-CV.pdf",
     "themeColor": "#C2185B",
     "ogImage": "assets/img/og-image.png"
   },
@@ -34,7 +34,7 @@
     "lead": "I'm a Computing with Cloud Computing student at TU Dublin (Class of 2028) with a deep fascination for the \"invisible\" side of technology.",
     "paragraphs": [
       "My foundation is built on HTML, CSS, JavaScript and Python, but my real interest lies in the complexity of backend architecture and how robust network systems support the modern web.",
-      "With my full-time course I'm also taking Part-time course in CISCO Networks and System Administration at TUD aswell. This Course helps me strengthen my knowledge in network, Routing and Switching, Scaling network and system admin."  
+      "With my full-time course, I'm also taking Part-time course in CISCO Networks and System Administration at TUD aswell. This Course helps me strengthen my knowledge in network, Routing and Switching, Scaling network and system admin."  
     ],
     "facts": [
       { "label": "Based in", "value": "Dublin, Ireland" },
